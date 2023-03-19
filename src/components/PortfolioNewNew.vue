@@ -15,7 +15,7 @@ import BlankPanel from "@/components/BlankPanel.vue";
     <div class="hero">
       <h1>My Portfolio</h1>
       <h2>Opens up a world of creative possibilities for all your design projects.</h2>
-      <button>Learn More</button>
+      <button><RouterLink to="/about">Learn More</RouterLink></button>
     </div>
     <div class="row">
 
@@ -116,8 +116,9 @@ import BlankPanel from "@/components/BlankPanel.vue";
 <style scoped>
 .top-blanker-panel {
   height: 20vh;
-  background-color: #282828;
+  background-color: #212121;
   z-index: 100;
+  bottom: -3px;
 }
 img {
   max-width: 100%;
@@ -141,7 +142,7 @@ figure {
 }
 .section--featured {
   height: 860px;
-  background-color: #282828;
+  background-color: #212121;
 }
 .section--featured .row,
 .section--featured .column,

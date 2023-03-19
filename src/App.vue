@@ -1,14 +1,31 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import HeaderText from "@/components/HeaderText.vue";
+import Stars from "@/components/Stars.vue";
+import Divisor from "@/components/Divisor.vue";
 
 </script>
 
 <template>
 
-<!--    <div id="app">-->
-<!--    </div>-->
 
-  <!--  This calls the main view view which then renders the first 2 panels of the landing page-->
+  <div>
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/about">About</RouterLink>
+  </div>
+
+
+  <stars/>
+
+  <header>
+    <HeaderText />
+  </header>
+
+  <section class="section-1">
+    <Divisor />
+  </section>
+
+
     <RouterView />
 </template>
 

@@ -31,7 +31,7 @@ import Stars from "@/components/Stars.vue";
   position: relative;
   height: 90vh;
   width: 100%;
-  background-color: #282828;
+  background-color: #212121;
 }
 
 #section-0 .text {

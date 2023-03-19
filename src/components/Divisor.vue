@@ -8,5 +8,6 @@
   transform: scaleX(-1);
   filter: invert(10%);
   display: flex;
+  bottom: -4px;
 }
 </style>
