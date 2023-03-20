@@ -6,6 +6,5 @@
 .panel {
   height: 25vh;
   background-color: #212121;
-  /*background-color: #282828;*/
 }
 </style>

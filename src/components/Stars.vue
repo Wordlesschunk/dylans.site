@@ -49,7 +49,6 @@
 #stars3:after {
   content: " ";
   position: absolute;
-  /*top: 2000px;*/
   width: 3px;
   height: 3px;
   background: transparent;

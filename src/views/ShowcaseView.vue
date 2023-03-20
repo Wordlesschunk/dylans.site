@@ -1,22 +1,16 @@
-<script setup>
-import Stars from "@/components/Stars.vue";
-import BlankPanel from "@/components/BlankPanel.vue";
-</script>
-
 <template>
 
   <div class="top-blanker-panel"></div>
 
-
-  <div class="demo-content" id="content">
-
-
   <div class="section section--featured">
     <div class="hero">
       <h1>My Portfolio</h1>
-      <h2>Opens up a world of creative possibilities for all your design projects.</h2>
-      <button><RouterLink to="/about">Learn More</RouterLink></button>
+      <h2>Come take a deeper dive into some of the projects I've been working on!</h2>
+      <RouterLink to="/about">
+        <button>Learn More</button>
+      </RouterLink>
     </div>
+
     <div class="row">
 
       <div class="column">
@@ -27,6 +21,10 @@ import BlankPanel from "@/components/BlankPanel.vue";
           </figure>
         </div>
       </div>
+
+      <showcase-item image-url="https://dylans.site/_2023/data/img/hhl-website.png"/>
+
+
       <div class="column">
         <div class="ItemCard">
           <figure class="ItemCard__thumb">
@@ -35,6 +33,7 @@ import BlankPanel from "@/components/BlankPanel.vue";
           </figure>
         </div>
       </div>
+
       <div class="column">
         <div class="ItemCard">
           <figure class="ItemCard__thumb">
@@ -43,6 +42,7 @@ import BlankPanel from "@/components/BlankPanel.vue";
           </figure>
         </div>
       </div>
+
       <div class="column">
         <div class="ItemCard">
           <figure class="ItemCard__thumb">
@@ -110,7 +110,6 @@ import BlankPanel from "@/components/BlankPanel.vue";
     </div>
   </div>
 
-</div>
 </template>
 
 <style scoped>
@@ -128,7 +127,6 @@ figure {
   margin: 0;
   padding: 10px;
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -148,9 +146,7 @@ figure {
 .section--featured .column,
 .section--featured .ItemCard,
 .section--featured .ItemCard__thumb {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 .section--featured .row {
@@ -184,30 +180,19 @@ figure {
   width: 50%;
   max-width: 50%;
   padding: 20px;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 .section--featured .shadow {
   display: block;
-  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   opacity: .9;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
-  -webkit-animation: 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) shadow 2;
   animation: 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) shadow 2;
 }
 .section--featured .ItemCard__thumb img {
   position: relative;
   z-index: 1;
-  /*-webkit-transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);*/
-  /*transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);*/
-  /*transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);*/
-  /*transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);*/
-  /*-webkit-transform: translate3d(0, 0, 20px);*/
-  /*transform: translate3d(0, 0, 20px);*/
 }
 
 .hero {
@@ -219,27 +204,7 @@ figure {
   font-family: 'Roboto', sans-serif;
   color: #FFFFFF;
 }
-@media screen and (min-width: 680px) {
-  .hero {
-    width: 80vw;
-    padding: 160px 100px 40px 40px;
-  }
-}
-@media screen and (min-width: 840px) {
-  .hero {
-    width: 70vw;
-  }
-}
-@media screen and (min-width: 960px) {
-  .hero {
-    width: 60vw;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .hero {
-    width: 50vw;
-  }
-}
+
 @media screen and (min-width: 1200px) {
   .hero {
     width: 40vw;
@@ -247,6 +212,7 @@ figure {
   }
 }
 
+/* =========== */
 .hero h1 {
   margin: 0;
   font-size: 3em;
@@ -262,51 +228,21 @@ figure {
 .hero button {
   margin-top: 40px;
   padding: 20px 60px;
-  display: block;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  color: #fff;
+  color: #FFFFFF;
   border: 0;
   border-radius: 30px;
   background-color: #ec3e3a;
 }
-/*@media screen and (min-width: 640px) {*/
-/*  .column {*/
-/*    width: 320px;*/
-/*    max-width: 50%;*/
-/*    -webkit-box-flex: 1;*/
-/*    -webkit-flex: 1 1 320px;*/
-/*    -ms-flex: 1 1 320px;*/
-/*    flex: 1 1 320px;*/
-/*  }*/
-/*}*/
-/*@media screen and (min-width: 940px) {*/
-/*  .column {*/
-/*    width: 313.33333333px;*/
-/*    max-width: 33.333%;*/
-/*    -webkit-box-flex: 1;*/
-/*    -webkit-flex: 1 1 313.33333333px;*/
-/*    -ms-flex: 1 1 313.33333333px;*/
-/*    flex: 1 1 313.33333333px;*/
-/*  }*/
-/*}*/
+/* =========== */
 
 .ItemCard {
   position: relative;
   max-width: 510px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .ItemCard__thumb {
@@ -317,3 +253,6 @@ figure {
   display: block;
 }
 </style>
+<script setup>
+import ShowcaseItem from "@/components/ShowcaseItem.vue";
+</script>

@@ -1,7 +1,12 @@
+<script setup>
+import PortfolioItem from "@/components/PortfolioItem.vue";
+</script>
+
 <template>
   <section id="three" class="wrapper style2">
     <div class="inner">
       <div class="posts">
+
         <portfolio-item
             title="Test"
             about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
@@ -38,11 +43,12 @@
               venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
             button-link="test link"
         />
+
       </div>
     </div>
   </section>
-
 </template>
+
 <style scoped>
 #three {
   background: #212121;
@@ -118,6 +124,3 @@
   }
 }
 </style>
-<script setup>
-import PortfolioItem from "@/components/PortfolioItem.vue";
-</script>
