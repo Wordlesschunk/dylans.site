@@ -2,6 +2,12 @@
 
   <div class="top-blanker-panel"></div>
 
+
+  <div class="mobile-view">
+    <portfolio-view/>
+  </div>
+
+  <div class="desktop-view">
   <div class="section section--featured">
     <div class="hero">
       <h1>My Portfolio</h1>
@@ -12,19 +18,18 @@
     </div>
 
     <div class="row">
-
-      <showcase-item :imageSrc="hhl" />
-      <showcase-item :imageSrc="hhl" />
-      <showcase-item :imageSrc="hhl" />
-      <showcase-item :imageSrc="hhl" />
-      <showcase-item :imageSrc="hhl" />
-      <showcase-item :imageSrc="hhl" />
-      <showcase-item :imageSrc="hhl" />
-      <showcase-item :imageSrc="hhl" />
-      <showcase-item :imageSrc="hhl" />
-      <showcase-item :imageSrc="hhl" />
-      <showcase-item :imageSrc="hhl" />
-
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+    </div>
   </div>
   </div>
 
@@ -37,14 +42,17 @@
   z-index: 100;
   bottom: -3px;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 figure {
   margin: 0;
   padding: 10px;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -54,6 +62,7 @@ figure {
   height: 860px;
   background-color: #212121;
 }
+
 .section--featured .row,
 .section--featured .column,
 .section--featured .ItemCard,
@@ -61,6 +70,7 @@ figure {
   backface-visibility: hidden;
   transform-style: preserve-3d;
 }
+
 .section--featured .row {
   position: absolute;
   top: -400px;
@@ -72,28 +82,44 @@ figure {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
+
+/*Mobile phones*/
+@media screen and (max-width: 700px) {
+  .desktop-view {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 720px) {
   .section--featured .row {
     right: 70vh;
   }
 }
+
 @media screen and (min-width: 860px) {
   .section--featured .row {
     top: -450px;
     right: 90vh;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .section--featured .row {
     right: 110vh;
   }
+
+  .mobile-view {
+    display: none;
+  }
 }
+
 .section--featured .column {
   width: 50%;
   max-width: 50%;
   padding: 20px;
   flex: 1 1 50%;
 }
+
 .section--featured .shadow {
   display: block;
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -102,6 +128,7 @@ figure {
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
   animation: 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) shadow 2;
 }
+
 .section--featured .ItemCard__thumb img {
   position: relative;
   z-index: 1;
@@ -131,12 +158,14 @@ figure {
   font-weight: 900;
   color: #FFFFFF;
 }
+
 .hero h2 {
   font-size: 1.2em;
   font-weight: 400;
   opacity: .6;
   color: #FFFFFF;
 }
+
 .hero button {
   margin-top: 40px;
   padding: 20px 60px;
@@ -148,24 +177,16 @@ figure {
   border-radius: 30px;
   background-color: #ec3e3a;
 }
+
 /* =========== */
 
-.ItemCard {
-  position: relative;
-  max-width: 510px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.ItemCard__thumb {
-  position: relative;
-  padding: 0;
-}
 .ItemCard__thumb img {
   display: block;
 }
+
 </style>
 <script setup>
 import ShowcaseItem from "@/components/ShowcaseItem.vue";
 import hhl from "@/assets/hhl-website.png"
+import PortfolioView from "@/views/PortfolioView.vue";
 </script>

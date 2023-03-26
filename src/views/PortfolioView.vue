@@ -56,6 +56,11 @@ import PortfolioItem from "@/components/PortfolioItem.vue";
             :imageSrc="basicImage"
         />
       </div>
+
+      <RouterLink to="/">
+        <button>Back</button>
+      </RouterLink>
+
     </div>
   </section>
 </template>
@@ -91,13 +96,13 @@ import PortfolioItem from "@/components/PortfolioItem.vue";
   position: relative;
 }
 
-.wrapper>.inner {
+.wrapper > .inner {
   margin: 0 auto;
   max-width: 90em;
   width: 90%;
 }
 
-.wrapper+.wrapper {
+.wrapper + .wrapper {
   border-top: solid 1px #e6e6e6;
 }
 
@@ -112,14 +117,14 @@ import PortfolioItem from "@/components/PortfolioItem.vue";
     padding: 3em 0 1em 0;
   }
 
-  .wrapper>.inner {
+  .wrapper > .inner {
     width: 100%;
     padding: 0 3em;
   }
 }
 
 @media screen and (max-width: 980px) {
-  .wrapper>.inner>* {
+  .wrapper > .inner > * {
     width: 100%;
     padding-left: 0 !important;
   }
@@ -130,7 +135,7 @@ import PortfolioItem from "@/components/PortfolioItem.vue";
     padding: 2.5em 0 0.5em 0;
   }
 
-  .wrapper>.inner {
+  .wrapper > .inner {
     padding: 0 1.5em;
   }
 }
