@@ -1,6 +1,5 @@
 <script setup>
 import BlankPanel from "@/components/BlankPanel.vue";
-import Showcase from "@/components/Showcase.vue";
 import ShowcaseView from "@/views/ShowcaseView.vue";
 </script>
 

@@ -1,4 +1,5 @@
 <script setup>
+import basicImage from "@/assets/img.png";
 import PortfolioItem from "@/components/PortfolioItem.vue";
 </script>
 
@@ -12,38 +13,48 @@ import PortfolioItem from "@/components/PortfolioItem.vue";
             about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
               venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
             button-link="test link"
-        />
-        <portfolio-item
-            title="Test"
-            about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
-              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
-            button-link="test link"
-        />
-        <portfolio-item
-            title="Test"
-            about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
-              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
-            button-link="test link"
-        />
-        <portfolio-item
-            title="Test"
-            about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
-              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
-            button-link="test link"
-        />
-        <portfolio-item
-            title="Test"
-            about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
-              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
-            button-link="test link"
-        />
-        <portfolio-item
-            title="Test"
-            about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
-              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
-            button-link="test link"
+            :imageSrc="basicImage"
         />
 
+        <portfolio-item
+            title="Test"
+            about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
+              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
+            button-link="test link"
+            :imageSrc="basicImage"
+        />
+
+        <portfolio-item
+            title="Test"
+            about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
+              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
+            button-link="test link"
+            :imageSrc="basicImage"
+        />
+
+        <portfolio-item
+            title="Test"
+            about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
+              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
+            button-link="test link"
+            :imageSrc="basicImage"
+        />
+
+        <portfolio-item
+            title="Test"
+            about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
+              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
+            button-link="test link"
+            :imageSrc="basicImage"
+        />
+
+        <portfolio-item
+            title="Test"
+            about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
+              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
+            button-link="test link"
+            :imageSrc="basicImage"
+        />
       </div>
     </div>
   </section>

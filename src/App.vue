@@ -2,8 +2,8 @@
 import { RouterView } from 'vue-router'
 import HeaderText from "@/components/HeaderText.vue";
 import Stars from "@/components/Stars.vue";
-import Divisor from "@/components/Divisor.vue";
 import BlankPanel from "@/components/BlankPanel.vue";
+import Divider from "@/components/Divider.vue";
 </script>
 
 <template>
@@ -14,7 +14,7 @@ import BlankPanel from "@/components/BlankPanel.vue";
   </header>
 
   <section>
-    <Divisor />
+    <Divider/>
   </section>
 <!--  Header Components -->
 

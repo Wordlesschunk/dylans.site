@@ -1,7 +1,7 @@
 <template>
   <section class="post">
     <span class="image">
-      <img src="https://dylans.site/_2023/portfolio/images/pic01.jpg" alt="">
+      <img :src="imageSrc" alt="">
     </span>
     <div class="content">
       <h3>{{ title }}</h3>
@@ -18,6 +18,7 @@ export default {
       'title',
       'about',
       'buttonLink',
+      'imageSrc',
   ]
 }
 </script>

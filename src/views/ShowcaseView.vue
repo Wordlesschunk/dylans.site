@@ -6,108 +6,26 @@
     <div class="hero">
       <h1>My Portfolio</h1>
       <h2>Come take a deeper dive into some of the projects I've been working on!</h2>
-      <RouterLink to="/about">
+      <RouterLink to="/portfolio">
         <button>Learn More</button>
       </RouterLink>
     </div>
 
     <div class="row">
 
-      <div class="column">
-        <div class="ItemCard">
-          <figure class="ItemCard__thumb">
-            <img src="https://dylans.site/_2023/data/img/hhl-website.png" height="340" width="510" alt="">
-            <span class="shadow cover"></span>
-          </figure>
-        </div>
-      </div>
+      <showcase-item :imageSrc="hhl" />
+      <showcase-item :imageSrc="hhl" />
+      <showcase-item :imageSrc="hhl" />
+      <showcase-item :imageSrc="hhl" />
+      <showcase-item :imageSrc="hhl" />
+      <showcase-item :imageSrc="hhl" />
+      <showcase-item :imageSrc="hhl" />
+      <showcase-item :imageSrc="hhl" />
+      <showcase-item :imageSrc="hhl" />
+      <showcase-item :imageSrc="hhl" />
+      <showcase-item :imageSrc="hhl" />
 
-      <showcase-item image-url="https://dylans.site/_2023/data/img/hhl-website.png"/>
-
-
-      <div class="column">
-        <div class="ItemCard">
-          <figure class="ItemCard__thumb">
-            <img src="https://dylans.site/_2023/data/img/hhl-website.png" height="340" width="510" alt="">
-            <span class="shadow cover"></span>
-          </figure>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="ItemCard">
-          <figure class="ItemCard__thumb">
-            <img src="https://dylans.site/_2023/data/img/hhl-website.png" height="340" width="510" alt="">
-            <span class="shadow cover"></span>
-          </figure>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="ItemCard">
-          <figure class="ItemCard__thumb">
-            <img src="https://dylans.site/_2023/data/img/hhl-website.png" height="340" width="510" alt="">
-            <span class="shadow cover"></span>
-          </figure>
-        </div>
-      </div>
-      <div class="column">
-        <div class="ItemCard">
-          <figure class="ItemCard__thumb">
-            <img src="https://dylans.site/_2023/data/img/hhl-website.png" height="340" width="510" alt="">
-            <span class="shadow cover"></span>
-          </figure>
-        </div>
-      </div>
-      <div class="column">
-        <div class="ItemCard">
-          <figure class="ItemCard__thumb">
-            <img src="https://dylans.site/_2023/data/img/hhl-website.png" height="340" width="510" alt="">
-            <span class="shadow cover"></span>
-          </figure>
-        </div>
-      </div>
-      <div class="column">
-        <div class="ItemCard">
-          <figure class="ItemCard__thumb">
-            <img src="https://dylans.site/_2023/data/img/hhl-website.png" height="340" width="510" alt="">
-            <span class="shadow cover"></span>
-          </figure>
-        </div>
-      </div>
-      <div class="column">
-        <div class="ItemCard">
-          <figure class="ItemCard__thumb">
-            <img src="https://dylans.site/_2023/data/img/hhl-website.png" height="340" width="510" alt="">
-            <span class="shadow cover"></span>
-          </figure>
-        </div>
-      </div>
-      <div class="column">
-        <div class="ItemCard">
-          <figure class="ItemCard__thumb">
-            <img src="https://dylans.site/_2023/data/img/hhl-website.png" height="340" width="510" alt="">
-            <span class="shadow cover"></span>
-          </figure>
-        </div>
-      </div>
-      <div class="column">
-        <div class="ItemCard">
-          <figure class="ItemCard__thumb">
-            <img src="https://dylans.site/_2023/data/img/hhl-website.png" height="340" width="510" alt="">
-            <span class="shadow cover"></span>
-          </figure>
-        </div>
-      </div>
-      <div class="column">
-        <div class="ItemCard">
-          <figure class="ItemCard__thumb">
-            <img src="https://dylans.site/_2023/data/img/hhl-website.png" height="340" width="510" alt="">
-            <span class="shadow cover"></span>
-          </figure>
-        </div>
-      </div>
-    </div>
+  </div>
   </div>
 
 </template>
@@ -131,13 +49,7 @@ figure {
   display: flex;
   flex-wrap: wrap;
 }
-.cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 .section--featured {
   height: 860px;
   background-color: #212121;
@@ -255,4 +167,5 @@ figure {
 </style>
 <script setup>
 import ShowcaseItem from "@/components/ShowcaseItem.vue";
+import hhl from "@/assets/hhl-website.png"
 </script>
