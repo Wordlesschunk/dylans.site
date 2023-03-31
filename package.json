@@ -8,10 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "tsparticles": "^2.9.3",
     "vue": "^3.2.47",
-    "vue-router": "^4.1.6",
-    "vue3-particles": "^2.9.3"
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

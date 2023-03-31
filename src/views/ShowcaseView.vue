@@ -1,7 +1,11 @@
+<script setup>
+import ShowcaseItem from "@/components/ShowcaseItem.vue";
+import hhl from "@/assets/hhl-website.png"
+import PortfolioView from "@/views/PortfolioView.vue";
+</script>
+
 <template>
-
   <div class="top-blanker-panel"></div>
-
 
   <div class="mobile-view">
     <portfolio-view/>
@@ -185,8 +189,3 @@ figure {
 }
 
 </style>
-<script setup>
-import ShowcaseItem from "@/components/ShowcaseItem.vue";
-import hhl from "@/assets/hhl-website.png"
-import PortfolioView from "@/views/PortfolioView.vue";
-</script>

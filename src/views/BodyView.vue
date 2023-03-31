@@ -5,6 +5,8 @@ import ShowcaseView from "@/views/ShowcaseView.vue";
 
 <template>
   <main>
+
+<!--    here is where we determine what view to show dependent on screensize for now-->
     <section class="section-3">
       <ShowcaseView/>
     </section>
@@ -14,3 +16,7 @@ import ShowcaseView from "@/views/ShowcaseView.vue";
     </section>
   </main>
 </template>
+
+<style scoped>
+
+</style>

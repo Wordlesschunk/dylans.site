@@ -18,13 +18,11 @@ import Divider from "@/components/Divider.vue";
   </section>
 <!--  Header Components -->
 
-
 <!--  Dynamic Views Component -->
   <section>
     <RouterView />
   </section>
 <!--  Dynamic Views Component -->
-
 
 <!--  Footer Components -->
   <section>
