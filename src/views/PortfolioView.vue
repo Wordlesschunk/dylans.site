@@ -69,9 +69,12 @@ import basicImage from "@/assets/img.png";
         </li>
       </ul>
 
+        <div class="mobile-view">
       <RouterLink to="/">
         <button>Back</button>
       </RouterLink>
+        </div>
+
 
     </div>
   </section>
@@ -105,5 +108,11 @@ import basicImage from "@/assets/img.png";
   .cards_item {
     width: 33.3333%;
   }
+}
+
+@media screen and (max-width: 1000px) {
+    .mobile-view {
+        display: none;
+    }
 }
 </style>
