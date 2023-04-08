@@ -1,6 +1,10 @@
 <script setup>
 import PortfolioItem from "@/components/PortfolioItem.vue";
 import basicImage from "@/assets/img.png";
+import giga64Landing from "@/assets/image/giga64-landing-page.png"
+import hydrusHoldingsLanding from "@/assets/image/hydrusholdings-landing-page.png"
+import rustWiperLanding from "@/assets/image/rustWiper-landing-page.png"
+
 </script>
 
 <template>
@@ -10,31 +14,31 @@ import basicImage from "@/assets/img.png";
 
         <li class="cards_item">
           <PortfolioItem
-              title="Test"
+              title="Rust Server Wiper"
               about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
               venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
               button-link="test link"
-              :imageSrc="basicImage"
+              :imageSrc="rustWiperLanding"
           />
         </li>
 
         <li class="cards_item">
           <PortfolioItem
-              title="Test"
+              title="HydrusHoldings"
               about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
               venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
               button-link="test link"
-              :imageSrc="basicImage"
+              :imageSrc="hydrusHoldingsLanding"
           />
         </li>
 
         <li class="cards_item">
           <PortfolioItem
-              title="Test"
+              title="Giga64"
               about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
               venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
               button-link="test link"
-              :imageSrc="basicImage"
+              :imageSrc="giga64Landing"
           />
         </li>
 

@@ -2,7 +2,7 @@
   <div class="column">
     <div class="ItemCard">
       <figure class="ItemCard__thumb">
-        <img :src="imageSrc" height="340" width="510" alt="">
+        <img :src="imageSrc" height="350" width="510" alt="">
         <span class="shadow cover"></span>
       </figure>
     </div>
@@ -20,12 +20,6 @@ export default {
 </script>
 
 <style scoped>
-.top-blanker-panel {
-  height: 20vh;
-  background-color: #212121;
-  z-index: 100;
-  bottom: -3px;
-}
 img {
   max-width: 100%;
   height: auto;

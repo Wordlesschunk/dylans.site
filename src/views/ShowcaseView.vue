@@ -1,6 +1,9 @@
 <script setup>
 import ShowcaseItem from "@/components/ShowcaseItem.vue";
 import hhl from "@/assets/hhl-website.png"
+import giga64Landing from "@/assets/image/giga64-landing-page.png"
+import hydrusHoldingsLanding from "@/assets/image/hydrusholdings-landing-page.png"
+import rustWiperLanding from "@/assets/image/rustWiper-landing-page.png"
 import PortfolioView from "@/views/PortfolioView.vue";
 </script>
 
@@ -30,9 +33,9 @@ import PortfolioView from "@/views/PortfolioView.vue";
       <showcase-item :imageSrc="hhl"/>
       <showcase-item :imageSrc="hhl"/>
       <showcase-item :imageSrc="hhl"/>
-      <showcase-item :imageSrc="hhl"/>
-      <showcase-item :imageSrc="hhl"/>
-      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hydrusHoldingsLanding"/>
+      <showcase-item :imageSrc="rustWiperLanding"/>
+      <showcase-item :imageSrc="giga64Landing"/>
     </div>
   </div>
   </div>
