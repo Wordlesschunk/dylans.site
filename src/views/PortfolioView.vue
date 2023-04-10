@@ -4,6 +4,7 @@ import basicImage from "@/assets/img.png";
 import giga64Landing from "@/assets/image/giga64-landing-page.png"
 import hydrusHoldingsLanding from "@/assets/image/hydrusholdings-landing-page.png"
 import rustWiperLanding from "@/assets/image/rustWiper-landing-page.png"
+import adcLanding from "@/assets/image/ADC-dashboard-page.png"
 
 </script>
 
@@ -12,7 +13,17 @@ import rustWiperLanding from "@/assets/image/rustWiper-landing-page.png"
     <div class="main">
       <ul class="cards">
 
-        <li class="cards_item">
+          <li class="cards_item">
+              <PortfolioItem
+                      title="Automated Deployment Checker"
+                      about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
+              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
+                      button-link="test link"
+                      :imageSrc="adcLanding"
+              />
+          </li>
+
+          <li class="cards_item">
           <PortfolioItem
               title="Rust Server Wiper"
               about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
@@ -39,16 +50,6 @@ import rustWiperLanding from "@/assets/image/rustWiper-landing-page.png"
               venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
               button-link="test link"
               :imageSrc="giga64Landing"
-          />
-        </li>
-
-        <li class="cards_item">
-          <PortfolioItem
-              title="Test"
-              about="Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at
-              venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien"
-              button-link="test link"
-              :imageSrc="basicImage"
           />
         </li>
 
