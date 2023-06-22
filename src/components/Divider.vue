@@ -1,6 +1,6 @@
 <template>
   <div class="divisor">
-    <img src="@/assets/wave.svg" alt="Wren Logo">
+    <img src="@/assets/wave.svg">
   </div>
 </template>
 
