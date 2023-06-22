@@ -1,9 +1,8 @@
 <script setup>
 import ShowcaseItem from "@/components/ShowcaseItem.vue";
+import hhl from "@/assets/hhl-website.png"
 import giga64Landing from "@/assets/image/giga64-landing-page.png"
-import giga64NetworkLanding from "@/assets/image/giga64-network-landing-page.png"
 import hydrusHoldingsLanding from "@/assets/image/hydrusholdings-landing-page.png"
-import servershardsLanding from "@/assets/image/servershards-landing-page.png"
 import rustWiperLanding from "@/assets/image/rustWiper-landing-page.png"
 import adcLanding from "@/assets/image/ADC-dashboard-page.png"
 import PortfolioView from "@/views/PortfolioView.vue";
@@ -27,12 +26,14 @@ import PortfolioView from "@/views/PortfolioView.vue";
     </div>
 
     <div class="row">
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
+      <showcase-item :imageSrc="hhl"/>
       <showcase-item :imageSrc="hydrusHoldingsLanding"/>
-      <showcase-item :imageSrc="hydrusHoldingsLanding"/>
-      <showcase-item :imageSrc="hydrusHoldingsLanding"/>
-      <showcase-item :imageSrc="hydrusHoldingsLanding"/>
-      <showcase-item :imageSrc="giga64NetworkLanding"/>
-      <showcase-item :imageSrc="servershardsLanding"/>
       <showcase-item :imageSrc="giga64Landing"/>
       <showcase-item :imageSrc="rustWiperLanding"/>
       <showcase-item :imageSrc="adcLanding"/>
@@ -44,7 +45,7 @@ import PortfolioView from "@/views/PortfolioView.vue";
 
 <style scoped>
 .top-blanker-panel {
-  height: 25vh;
+  height: 20vh;
   background-color: #212121;
   z-index: 100;
   bottom: -3px;

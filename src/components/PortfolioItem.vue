@@ -4,7 +4,6 @@ export default {
   props: [
     'title',
     'about',
-    'techStack',
     'buttonLink',
     'imageSrc',
   ]
@@ -17,11 +16,7 @@ export default {
     <div class="card_content">
       <h2 class="card_title">{{ title }}</h2>
       <p class="card_text">{{ about }}</p>
-      <h2 class="card_title">Stack</h2>
-      <p class="card_text">{{ techStack }}</p>
-        <a class="fakeButton" :href="buttonLink">Learn More</a>
-        <br>
-        <br>
+      <button class="btn card_btn">Read More</button>
     </div>
   </div>
 </template>
