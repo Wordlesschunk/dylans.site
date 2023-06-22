@@ -64,7 +64,7 @@ import adcLanding from "@/assets/image/ADC-dashboard-page.png"
                With a custom backend setup and strategic integration with Multicraft and WHMCS, we delivered a seamless experience for server deployment,
                 monitoring, and customer billing. Our reliable infrastructure and exceptional support ensured lag-free gameplay and customer satisfaction."
               tech-stack="Linux, WHMCS, Bare Metal Servers, VPS, VRacks, DNS"
-              button-link="test link"
+              button-link="https://github.com/Wordlesschunk/Project-Media/tree/main/Giga64-Website"
               :imageSrc="giga64Landing"
           />
         </li>
