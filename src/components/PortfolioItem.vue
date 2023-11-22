@@ -35,15 +35,18 @@ export default {
   flex-direction: column;
   overflow: hidden;
 }
+
 img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
 }
+
 .card_content {
   padding: 1rem;
   background: #FFFFFF;
 }
+
 .card_title {
   color: #080808;
   font-size: 1.1rem;
@@ -52,6 +55,7 @@ img {
   text-transform: capitalize;
   margin: 0px;
 }
+
 .card_text {
   color: #080808;
   font-size: 0.875rem;

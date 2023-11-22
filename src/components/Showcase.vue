@@ -1,7 +1,5 @@
 <template>
-
   <div class="top-blanker-panel"></div>
-
   <div class="section section--featured">
     <div class="hero">
       <h1>My Portfolio</h1>

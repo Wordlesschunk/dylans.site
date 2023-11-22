@@ -1,19 +1,19 @@
 <template>
-    <div class="header-text">
-      <h1>Dylan Jennings</h1>
-      <h2>Software Developer</h2>
-      <a id="twitter" class="fab fa-twitter" href="https://twitter.com/wordlesschunk">Twitter</a>
-      <a id="github" class="fab fa-github" href="https://github.com/wordlesschunk">Github</a>
-      <a id="discord-icon" class="fab fa-discord" href="https://discord.gg/K4k6wyh5Mf">Discord</a>
-    </div>
-</template>
+  <div class="header-text">
+    <h1>Dylan Jennings</h1>
+    <h2>Software Developer</h2>
+  </div>
 
+  <div class="icons">
+    <a id="github" class="fab fa-github" href="https://github.com/wordlesschunk">Github</a>
+  </div>
+
+</template>
 <style scoped>
 .header-text {
-  position: absolute;
-  left: 7%;
-  top: 55%;
+  margin-bottom: 20px;
 }
+
 .header-text h1 {
   font-weight: 300;
   font-size: 5.1vw;
@@ -21,8 +21,25 @@
   color: white;
   text-transform: uppercase;
 }
- .header-text h2 {
+
+.header-text h2 {
   font-size: 2.2vw;
+}
+
+@media screen and (max-width: 600px) {
+  .header-text h1 {
+    font-size: 8.1vw;
+  }
+
+  .header-text h2 {
+    font-size: 4.2vw;
+  }
+}
+
+.icons {
+  display: block;
+  margin-top: -26px;
+  margin-bottom: 10px;
 }
 
 .fab {
@@ -31,6 +48,7 @@
   margin-left: 8px;
   font-size: 0;
 }
+
 .fab::before {
   font-size: 30px;
 }
@@ -38,10 +56,6 @@
 #github {
   color: #F4CBB2;
 }
-#twitter {
-  color: #1DA1F2;
-}
-#discord-icon {
-  color: #ccc;
-}
 </style>
+<script setup>
+</script>

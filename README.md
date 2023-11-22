@@ -1,25 +1,30 @@
-# Dylans.site (Portfolio Website)
 
-## Project Setup
+# Portfolio Website (dylans.site)
 
-```sh
-npm install
-```
+Trying to learn Vuejs by rebuilding my portfolio website.
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
 
 ## Tech Stack
 
 **Client:** Vuejs, Vite
 
-**Server:** Node
+**Server:** Node, Netlify
+
+
+## Installation
+
+Project Setup
+```sh
+npm install
+```
+
+Compile and Hot-Reload for Development
+```sh
+npm run dev
+```
+
+Compile and Minify for Production
+```sh
+npm run build
+```
