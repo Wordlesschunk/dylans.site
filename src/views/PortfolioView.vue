@@ -12,6 +12,18 @@ import adcLanding from "@/assets/image/ADC-dashboard-page.png"
     <div class="main">
       <ul class="cards">
 
+        <li class="cards_item">
+          <PortfolioItem
+              title="Vectis Planner"
+              about="Vectis Planner is a specialized calendar app designed with shift workers in mind. Whether you're a nurse,
+               retail employee, or part of any industry with irregular work hours, Vectis Planner makes managing your shifts,
+                hours, and earnings a breeze."
+              tech-stack="Symfony6, Docker & kubernetes, Javascript, Webpack"
+              buttonLink="https://github.com/Wordlesschunk/Project-Media/tree/main/VectisPlanner"
+              :imageSrc="vectisPlanner"
+          />
+        </li>
+
           <li class="cards_item">
               <PortfolioItem
                       title="Automated Deployment Checker"
