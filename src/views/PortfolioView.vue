@@ -4,6 +4,7 @@ import giga64Landing from "@/assets/image/giga64-landing-page.png"
 import giga64NetworkLanding from "@/assets/image/giga64-network-landing-page.png"
 import servershardsLanding from "@/assets/image/servershards-landing-page.png"
 import rustWiperLanding from "@/assets/image/rustWiper-landing-page.png"
+import vectisPlanner from "@/assets/image/vectisplanner-background.png"
 import adcLanding from "@/assets/image/ADC-dashboard-page.png"
 </script>
 
