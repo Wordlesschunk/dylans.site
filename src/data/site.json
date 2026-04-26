@@ -2,8 +2,6 @@
   "name": "Dylan Jennings",
   "greeting": "Hey, I'm",
   "roles": ["Product Builder", "Systems Thinker", "Technical Problem Solver", "Software Engineer"],
-  "status": "Available for projects & collaborations",
-  "skills": ["Software", "Hardware", "Design", "Building Things"],
   "socials": {
     "github": "https://github.com/Wordlesschunk",
     "linkedin": "https://www.linkedin.com/in/dylan-jennings-699370184/",
@@ -19,7 +17,7 @@
   "projects": {
     "title": "Projects",
     "subtitle": "Things I've been building",
-    "categories": ["All", "Software", "Hardware", "Other"]
+    "categories": ["All", "Software"]
   },
   "contact": {
     "title": "Let's build something",
