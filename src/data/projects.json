@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Project 1",
+    "description": "A web app that does something useful and solves a real problem.",
+    "icon": "fas fa-code",
+    "tags": ["Vue", "TypeScript", "Vite"],
+    "category": "Software",
+    "github": "#",
+    "url": "#",
+    "image": "https://picsum.photos/seed/project1/600/360"
+  },
+  {
+    "title": "Project 2",
+    "description": "A backend service handling data processing at scale.",
+    "icon": "fas fa-server",
+    "tags": ["Node.js", "Express", "PostgreSQL"],
+    "category": "Software",
+    "github": "#",
+    "image": "https://picsum.photos/seed/project2/600/360"
+  },
+  {
+    "title": "Project 3",
+    "description": "A custom controller built with a microcontroller and 3D-printed enclosure.",
+    "icon": "fas fa-microchip",
+    "tags": ["Arduino", "3D Printing", "Electronics"],
+    "category": "Hardware",
+    "github": "#",
+    "url": "#",
+    "image": "https://picsum.photos/seed/project3/600/360"
+  },
+  {
+    "title": "Project 4",
+    "description": "An interactive art installation combining LEDs and sensors.",
+    "icon": "fas fa-lightbulb",
+    "tags": ["Raspberry Pi", "Python", "LEDs"],
+    "category": "Hardware"
+  },
+  {
+    "title": "Project 5",
+    "description": "A mobile app for tracking and organising personal projects.",
+    "icon": "fas fa-mobile-alt",
+    "tags": ["React Native", "Firebase"],
+    "category": "Software",
+    "github": "#",
+    "url": "#"
+  },
+  {
+    "title": "Project 6",
+    "description": "A custom-built workbench designed and assembled from scratch.",
+    "icon": "fas fa-hammer",
+    "tags": ["Woodworking", "Design", "Hands-on"],
+    "category": "Other"
+  }
+]

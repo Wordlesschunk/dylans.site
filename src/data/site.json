@@ -1,0 +1,33 @@
+{
+  "name": "Dylan Jennings",
+  "greeting": "Hey, I'm",
+  "roles": ["Product Builder", "Systems Thinker", "Technical Problem Solver", "Software Engineer"],
+  "status": "Available for projects & collaborations",
+  "skills": ["Software", "Hardware", "Design", "Building Things"],
+  "socials": {
+    "github": "https://github.com/Wordlesschunk",
+    "linkedin": "https://www.linkedin.com/in/dylan-jennings-699370184/",
+    "email": "hello@dylans.site"
+  },
+  "nav": {
+    "initials": "DJ",
+    "links": [
+      { "label": "Projects", "href": "#portfolio" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Things I've been building",
+    "categories": ["All", "Software", "Hardware", "Other"]
+  },
+  "contact": {
+    "title": "Let's build something",
+    "text": "Got an idea, a project, or a collaboration in mind? Whether it's software, hardware, or something in between — let's talk.",
+    "buttonText": "Say Hello"
+  },
+  "footer": {
+    "text": "Built with Vue & a lot of coffee",
+    "copy": "© 2026 Dylan Jennings"
+  }
+}
