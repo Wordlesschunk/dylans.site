@@ -7,7 +7,7 @@
     "category": "Software",
     "github": "https://github.com/Wordlesschunk/Project-Media/tree/main/VectisPlanner",
     "url": "https://vectis.app/",
-    "image": "/src/assets/image/vectisplanner-background.png"
+    "image": "/image/vectisplanner-background.png"
   },
   {
     "title": "Automated Deployment Checker",
@@ -16,7 +16,7 @@
     "tags": ["Symfony 6", "Docker", "Jira API", "Bitbucket API", "JavaScript", "Webpack"],
     "category": "Software",
     "github": "https://github.com/Wordlesschunk/Project-Media/tree/main/Application-Deployment-Checker",
-    "image": "/src/assets/image/ADC-dashboard-page.png"
+    "image": "/image/ADC-dashboard-page.png"
   },
   {
     "title": "Rust Server Wiper",
@@ -25,7 +25,7 @@
     "tags": ["Symfony 5", "JavaScript", "Docker", "APIs", "Webpack"],
     "category": "Software",
     "github": "https://github.com/Wordlesschunk/Project-Media/tree/main/RustWiper",
-    "image": "/src/assets/image/rustWiper-landing-page.png"
+    "image": "/image/rustWiper-landing-page.png"
   },
   {
     "title": "ServerShards Game Hosting",
@@ -34,7 +34,7 @@
     "tags": ["Bare Metal Servers", "Terraform", "DNS", "VRacks", "VPS", "Auto Scaling", "Linux", "Windows Server"],
     "category": "Software",
     "github": "https://github.com/Wordlesschunk/Project-Media/tree/main/Servershards%20Game%20Hosting",
-    "image": "/src/assets/image/servershards-landing-page.png"
+    "image": "/image/servershards-landing-page.png"
   },
   {
     "title": "Giga64 Server Hosting",
@@ -43,7 +43,7 @@
     "tags": ["Linux", "WHMCS", "Bare Metal Servers", "VPS", "VRacks", "DNS"],
     "category": "Software",
     "github": "https://github.com/Wordlesschunk/Project-Media/tree/main/Giga64-Website",
-    "image": "/src/assets/image/giga64-landing-page.png"
+    "image": "/image/giga64-landing-page.png"
   },
   {
     "title": "Giga64 Gaming Network",
@@ -52,6 +52,6 @@
     "tags": ["Linux", "VPS", "Bash Scripting"],
     "category": "Software",
     "github": "https://github.com/Wordlesschunk/Project-Media/tree/main/Giga64-Website",
-    "image": "/src/assets/image/giga64-network-landing-page.png"
+    "image": "/image/giga64-network-landing-page.png"
   }
 ]
