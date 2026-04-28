@@ -16,12 +16,14 @@
 
     <TransitionGroup name="card" tag="div" class="cards-grid">
       <article
-        v-for="card in filtered"
-        :key="card.title"
-        class="project-card"
-        :class="{ 'has-image': card.image }"
+          v-for="card in filtered"
+          :key="card.title"
+          class="project-card"
+          :class="{ 'has-image': card.image, 'has-case-study': caseStudySlugs.has(card.title) }"
+          @click="navigateToCaseStudy(card)"
+          v-show="card.show !== false"
       >
-        <div v-if="card.image" class="card-image" @click="openLightbox(card)">
+        <div v-if="card.image" class="card-image" @click.stop="openLightbox(card)">
           <img :src="card.image" :alt="card.title" loading="lazy" />
           <div class="image-overlay">
             <i class="fas fa-expand"></i>
@@ -29,26 +31,30 @@
         </div>
 
         <div class="card-body">
-        <div class="card-header">
-          <div class="card-icon">
-            <i :class="card.icon"></i>
+          <div class="card-header">
+            <div class="card-icon">
+              <i :class="card.icon"></i>
+            </div>
+            <div class="card-links">
+              <a v-if="card.github" :href="card.github" aria-label="View source" class="card-link" target="_blank" rel="noopener noreferrer" @click.stop>
+                <i class="fab fa-github"></i>
+              </a>
+              <a v-if="card.url" :href="card.url" aria-label="View live" class="card-link" target="_blank" rel="noopener noreferrer" @click.stop>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
           </div>
-          <div class="card-links">
-            <a v-if="card.github" :href="card.github" aria-label="View source" class="card-link" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-github"></i>
-            </a>
-            <a v-if="card.url" :href="card.url" aria-label="View live" class="card-link" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
+
+          <h3 class="card-title">{{ card.title }}</h3>
+          <p class="card-description">{{ card.description }}</p>
+
+          <div class="card-tags">
+            <span v-for="tag in card.tags" :key="tag" class="tag">{{ tag }}</span>
           </div>
-        </div>
 
-        <h3 class="card-title">{{ card.title }}</h3>
-        <p class="card-description">{{ card.description }}</p>
-
-        <div class="card-tags">
-          <span v-for="tag in card.tags" :key="tag" class="tag">{{ tag }}</span>
-        </div>
+          <span v-if="caseStudySlugs.has(card.title)" class="case-study-link">
+            View Case Study <i class="fas fa-arrow-right"></i>
+          </span>
         </div>
       </article>
     </TransitionGroup>
@@ -71,10 +77,15 @@
 
 <script setup lang="ts">
 import { ref, computed, watch, onUnmounted } from "vue";
+import { useRouter } from "vue-router";
 import projectsData from "@/data/projects.json";
+import caseStudies from "@/data/case-studies.json";
+
+const router = useRouter()
 
 interface Project {
   title: string;
+  show: boolean;
   description: string;
   icon: string;
   tags: string[];
@@ -82,6 +93,17 @@ interface Project {
   github?: string;
   url?: string;
   image?: string;
+}
+
+const caseStudySlugs = new Map(
+  caseStudies.map((cs) => [cs.title, cs.slug])
+)
+
+function navigateToCaseStudy(card: Project) {
+  const slug = caseStudySlugs.get(card.title)
+  if (slug) {
+    router.push({ name: 'case-study', params: { slug } })
+  }
 }
 
 defineProps<{
@@ -190,6 +212,10 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   transition: all 0.3s ease;
   cursor: default;
   overflow: hidden;
+}
+
+.project-card.has-case-study {
+  cursor: pointer;
 }
 
 .project-card:not(.has-image) {
@@ -301,6 +327,21 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   color: var(--color-primary);
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+.case-study-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  transition: gap 0.2s ease;
+}
+
+.case-study-link:hover {
+  gap: 0.7rem;
 }
 
 /* TransitionGroup animations */

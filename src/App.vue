@@ -2,10 +2,6 @@
 import site from "@/data/site.json"
 import StickyNav from "@/components/StickyNav.vue"
 import ScrollToTop from "@/components/ScrollToTop.vue"
-import LandingHeader from "@/components/LandingHeader.vue"
-import Divider from "@/components/Divider.vue"
-import PortfolioCard from "@/components/PortfolioCard.vue"
-import ContactCTA from "@/components/ContactCTA.vue"
 import { useScrollReveal } from "@/composables/useScrollReveal"
 
 useScrollReveal()
@@ -19,29 +15,7 @@ useScrollReveal()
   <ScrollToTop />
 
   <div class="page-container">
-    <header>
-      <LandingHeader
-        :name="site.name"
-        :roles="site.roles"
-        :socials="site.socials"
-      />
-    </header>
-
-    <Divider />
-
-    <main>
-      <PortfolioCard
-        :title="site.projects.title"
-        :subtitle="site.projects.subtitle"
-        :categories="site.projects.categories"
-      />
-      <ContactCTA
-        :title="site.contact.title"
-        :text="site.contact.text"
-        :button-text="site.contact.buttonText"
-        :email="site.socials.email"
-      />
-    </main>
+    <router-view class="page-content" />
 
     <footer>
       <div class="footer-content">
@@ -65,13 +39,7 @@ useScrollReveal()
     radial-gradient(ellipse at 50% 35%, rgba(26, 188, 156, 0.05) 0%, transparent 50%);
 }
 
-header {
-  text-align: left;
-}
-
-main {
-  background-color: var(--color-surface);
-  padding: 3rem 2rem;
+.page-content {
   flex: 1;
 }
 
@@ -96,13 +64,5 @@ footer {
 .footer-copy {
   color: #555;
   font-size: 0.8rem;
-}
-
-@media (min-width: 768px) {
-  main { padding: 4rem 4rem; }
-}
-
-@media (min-width: 1024px) {
-  main { padding: 4rem 6rem; }
 }
 </style>
