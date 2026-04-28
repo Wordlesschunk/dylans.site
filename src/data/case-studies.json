@@ -1,6 +1,7 @@
 [
   {
     "slug": "automated-deployment-checker",
+    "show": true,
     "title": "Automated Deployment Checker",
     "subtitle": "Reducing deployment risk through automated validation",
     "icon": "fas fa-rocket",
@@ -28,6 +29,7 @@
   },
   {
     "slug": "servershards-game-hosting",
+    "show": false,
     "title": "ServerShards Game Hosting",
     "subtitle": "Scaling a game hosting platform from Minecraft to multi-title",
     "icon": "fas fa-cubes",

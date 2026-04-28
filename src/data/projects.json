@@ -1,6 +1,7 @@
 [
   {
     "title": "Vectis Planner",
+    "show": true,
     "description": "Vectis Planner is a shift management app built for people working irregular schedules. Whether you're in healthcare, retail, hospitality, or any role with changing hours, it helps simplify day-to-day planning. Users can easily track shifts, working hours, earnings, and monthly overviews in one place, making organisation far easier and reducing the stress of managing complex rotas.",
     "icon": "fas fa-calendar-alt",
     "tags": ["Symfony 6", "Docker", "Kubernetes", "JavaScript", "Webpack"],
@@ -11,6 +12,7 @@
   },
   {
     "title": "Automated Deployment Checker",
+    "show": true,
     "description": "Automated Deployment Checker is an internal deployment preparation platform designed to help development teams reduce risk before production releases. The system performs automated validation checks, highlights missing steps, and provides clear feedback on what needs attention before deployment. It also helps developers choose the best branching strategy, generates deployment plans, and improves visibility for both technical teams and stakeholders, creating a smoother and more reliable release process.",
     "icon": "fas fa-rocket",
     "tags": ["Symfony 6", "Docker", "Jira API", "Bitbucket API", "JavaScript", "Webpack"],
@@ -20,6 +22,7 @@
   },
   {
     "title": "Rust Server Wiper",
+    "show": false,
     "description": "Rust Server Wiper is a server management platform built specifically for Rust game server owners. It automates the process of wiping and resetting servers, removing the need for repetitive manual tasks and reducing downtime. By integrating with the Pterodactyl API, the system allows owners to schedule wipes, manage server resets efficiently, and improve overall server performance while delivering a smoother experience for their player communities.",
     "icon": "fas fa-server",
     "tags": ["Symfony 5", "JavaScript", "Docker", "APIs", "Webpack"],
@@ -29,6 +32,7 @@
   },
   {
     "title": "ServerShards Game Hosting",
+    "show": false,
     "description": "ServerShards began as a successful Minecraft hosting service and evolved into a full-scale game server hosting platform supporting multiple titles including Rust, Factorio, and Garry's Mod. The project focused on expanding infrastructure, improving reliability, and creating a seamless hosting experience for customers. With scalable systems, automated provisioning, and strong backend management, the platform provided gamers with powerful hosting solutions and an easy-to-use management experience.",
     "icon": "fas fa-cubes",
     "tags": ["Bare Metal Servers", "Terraform", "DNS", "VRacks", "VPS", "Auto Scaling", "Linux", "Windows Server"],
@@ -38,6 +42,7 @@
   },
   {
     "title": "Giga64 Server Hosting",
+    "show": false,
     "description": "Giga64 was a large-scale game server hosting provider focused primarily on Minecraft, managing over 1,500 active servers at peak operation. Customers could rent dedicated game servers monthly through a fully custom-built hosting environment integrated with Multicraft and WHMCS. The platform handled deployment, billing, monitoring, and customer management, delivering a stable, scalable, and high-performance hosting solution backed by reliable infrastructure and strong technical support.",
     "icon": "fas fa-hdd",
     "tags": ["Linux", "WHMCS", "Bare Metal Servers", "VPS", "VRacks", "DNS"],
@@ -47,6 +52,7 @@
   },
   {
     "title": "Giga64 Gaming Network",
+    "show": false,
     "description": "Giga64 Gaming Network was a thriving Minecraft community platform built around multiple custom game modes and a large active player base. With over 400 daily active players, the network created a highly engaging multiplayer environment where players could connect, compete, and collaborate. The project focused on community growth, server performance, and delivering a polished gameplay experience supported by reliable infrastructure and custom server management tools.",
     "icon": "fas fa-gamepad",
     "tags": ["Linux", "VPS", "Bash Scripting"],

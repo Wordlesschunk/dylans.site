@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import {computed} from 'vue'
+import {useRoute, useRouter} from 'vue-router'
 import caseStudies from '@/data/case-studies.json'
 
 const route = useRoute()
 const router = useRouter()
 
-const study = computed(() =>
-  caseStudies.find((s) => s.slug === route.params.slug)
-)
+const study = computed(() => {
+  const foundStudy = caseStudies.find((s) => s.slug === route.params.slug)
+  return foundStudy?.show ? foundStudy : null
+})
 </script>
 
 <template>

@@ -16,11 +16,12 @@
 
     <TransitionGroup name="card" tag="div" class="cards-grid">
       <article
-        v-for="card in filtered"
-        :key="card.title"
-        class="project-card"
-        :class="{ 'has-image': card.image, 'has-case-study': caseStudySlugs.has(card.title) }"
-        @click="navigateToCaseStudy(card)"
+          v-for="card in filtered"
+          :key="card.title"
+          class="project-card"
+          :class="{ 'has-image': card.image, 'has-case-study': caseStudySlugs.has(card.title) }"
+          @click="navigateToCaseStudy(card)"
+          v-show="card.show !== false"
       >
         <div v-if="card.image" class="card-image" @click.stop="openLightbox(card)">
           <img :src="card.image" :alt="card.title" loading="lazy" />
@@ -84,6 +85,7 @@ const router = useRouter()
 
 interface Project {
   title: string;
+  show: boolean;
   description: string;
   icon: string;
   tags: string[];
