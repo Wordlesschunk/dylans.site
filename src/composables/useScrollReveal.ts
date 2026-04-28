@@ -2,6 +2,13 @@ import { onMounted, onUnmounted } from 'vue'
 
 export function useScrollReveal() {
   let observer: IntersectionObserver | null = null
+  let mutationObserver: MutationObserver | null = null
+
+  function observeElement(el: Element) {
+    if (!el.classList.contains('revealed')) {
+      observer?.observe(el)
+    }
+  }
 
   onMounted(() => {
     observer = new IntersectionObserver(
@@ -16,10 +23,27 @@ export function useScrollReveal() {
       { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
     )
 
-    document.querySelectorAll('.scroll-reveal').forEach((el) => {
-      observer?.observe(el)
+    document.querySelectorAll('.scroll-reveal').forEach(observeElement)
+
+    // Watch for dynamically added scroll-reveal elements
+    mutationObserver = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+          if (node instanceof HTMLElement) {
+            if (node.classList.contains('scroll-reveal')) {
+              observeElement(node)
+            }
+            node.querySelectorAll('.scroll-reveal').forEach(observeElement)
+          }
+        })
+      })
     })
+
+    mutationObserver.observe(document.body, { childList: true, subtree: true })
   })
 
-  onUnmounted(() => observer?.disconnect())
+  onUnmounted(() => {
+    observer?.disconnect()
+    mutationObserver?.disconnect()
+  })
 }

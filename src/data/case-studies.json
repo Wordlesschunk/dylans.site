@@ -1,0 +1,60 @@
+[
+  {
+    "slug": "automated-deployment-checker",
+    "title": "Automated Deployment Checker",
+    "subtitle": "Reducing deployment risk through automated validation",
+    "icon": "fas fa-rocket",
+    "tags": ["Symfony 6", "Docker", "Jira API", "Bitbucket API", "JavaScript", "Webpack"],
+    "image": "/image/ADC-dashboard-page.png",
+    "overview": "A deployment preparation platform that helps development teams reduce risk before production releases by performing automated validation checks and providing clear feedback.",
+    "sections": [
+      {
+        "heading": "The Problem",
+        "content": "Development teams were frequently deploying to production without completing all necessary preparation steps, leading to failed releases, rollbacks, and wasted time."
+      },
+      {
+        "heading": "The Solution",
+        "content": "Built an internal platform that performs automated validation checks against Jira and Bitbucket, highlights missing steps, and generates deployment plans tailored to each release."
+      },
+      {
+        "heading": "Technical Approach",
+        "content": "The system integrates with Jira and Bitbucket APIs to pull ticket status, branch information, and PR reviews. A rule engine evaluates readiness criteria and surfaces issues before they reach production."
+      },
+      {
+        "heading": "Outcome",
+        "content": "Reduced failed deployments significantly, improved visibility for stakeholders, and gave developers confidence in their release process."
+      }
+    ]
+  },
+  {
+    "slug": "servershards-game-hosting",
+    "title": "ServerShards Game Hosting",
+    "subtitle": "Scaling a game hosting platform from Minecraft to multi-title",
+    "icon": "fas fa-cubes",
+    "tags": ["Bare Metal Servers", "Terraform", "DNS", "VRacks", "VPS", "Auto Scaling", "Linux", "Windows Server"],
+    "image": "/image/servershards-landing-page.png",
+    "overview": "ServerShards started as a Minecraft hosting service and grew into a full-scale game server hosting platform supporting Rust, Factorio, Garry's Mod, and more — requiring a complete rethink of infrastructure, automation, and customer experience.",
+    "sections": [
+      {
+        "heading": "The Problem",
+        "content": "The original Minecraft-only setup was tightly coupled to a single game's requirements. As demand grew for other titles, the provisioning process was manual, slow, and error-prone. Each new game required custom configuration that didn't scale."
+      },
+      {
+        "heading": "The Solution",
+        "content": "Redesigned the entire hosting stack to be game-agnostic. Built an automated provisioning pipeline that could spin up isolated game servers on demand, with per-title configuration templates and resource allocation handled dynamically."
+      },
+      {
+        "heading": "Infrastructure",
+        "content": "Moved to a hybrid bare metal and VPS architecture using OVH VRacks for private networking. Terraform managed infrastructure-as-code for repeatable deployments. DNS was automated, and auto-scaling policies ensured capacity matched demand without over-provisioning."
+      },
+      {
+        "heading": "Customer Experience",
+        "content": "Built a self-service panel where customers could deploy, restart, and manage their servers without support intervention. Integrated billing, usage monitoring, and automated backups gave users full control and confidence in the platform."
+      },
+      {
+        "heading": "Outcome",
+        "content": "Successfully scaled to support multiple game titles with minimal operational overhead. Reduced provisioning time from hours to minutes, cut support tickets significantly, and maintained high uptime across the fleet."
+      }
+    ]
+  }
+]
